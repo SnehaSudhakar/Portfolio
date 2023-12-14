@@ -2,36 +2,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
 }
 
-
-
 /* navbar--------------------------------- */
-.navbar .collapse a {
-    color: white;
-    letter-spacing: 1px;
+.navbar-toggler {
+    background-color: black;
+    outline: none;
 }
 
 .navbar-toggler i {
-    font-size: 30px;
+    font-size: 40px;
+    color: rgb(44, 209, 209);
 }
 
 .navbar-collapse {
     background-color: black;
 }
 
+.navbar .collapse a {
+    color: white;
+    letter-spacing: 1px;
+}
+
 .navbar .collapse a:hover {
     background-color: black;
-    color: white;
+    color: rgb(44, 209, 209);
 }
 
 /* end of navbar--------------------------- */
 /* home section----------------------------- */
+
+.home-section {
+    background-color: black;
+    height: 100vh;
+    color: #fff;
+}
+
 .home-section {
     display: flex;
     justify-content: center;
@@ -40,12 +55,20 @@ body {
     transition: all ease-in-out 0.5s;
 }
 
-.home-section h1 {
-    font-size: 55px;
-    letter-spacing: 1px;
+.hom-content {
+    padding: 80px 120px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 10px rgb(44, 209, 209);
 }
 
-.home-section h3 {
+.home-section h1 {
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #fff;
+}
+
+.home-section h4 {
     letter-spacing: 2px;
 }
 
@@ -54,18 +77,30 @@ body {
     font-size: 18px;
 }
 
-#home {
-    background-image: url("../images/bg-1.jpg");
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.home-section .btn {
+    background-color: rgb(44, 209, 209);
+    color: black;
+    padding: 20px 50px;
+    cursor: pointer;
+}
+
+.home-section .btn:hover {
+    box-shadow: 0px 0px 20px 5px rgb(44, 209, 209);
+}
+
+.home-section .social i {
     color: #fff;
+    cursor: pointer;
+}
+
+.home-section .social i:hover {
+    color: rgb(44, 209, 209);
+    transform: rotate(360deg);
+    transition: 0.8s;
 }
 
 /* end of home section-------------------------------- */
+
 /* about section--------------------------------------- */
 #about .col {
     margin: 150px 0;
@@ -83,39 +118,55 @@ body {
     line-height: 2em;
 }
 
+.about-box a {
+    cursor: pointer;
+}
+
+.about-box a:hover {
+    box-shadow: 0px 0px 20px 5px rgb(82, 86, 86);
+}
+
 /* end of about section-------------------------------------- */
 
 /* skills section----------------------------------------------- */
 .skills-section {
-    background-image: url("../images/bg-2.jpg");
+    background: black;
     width: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
-.skills-section h2 {
-    padding-top: 85px;
-    margin-bottom: 30px;
-    color: rgb(12, 189, 189);
-    letter-spacing: 2px;
-}
-
-.skills-section h4 {
-    letter-spacing: 1px;
+.skills-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
 }
 
 .skills-section .col {
-    border: none;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+.skills-section h2 {
+    padding-top: 65px;
+    margin-bottom: 30px;
+    color: #4ba8ad;
+    letter-spacing: 2px;
+}
+
+.skills-section h5 {
+    letter-spacing: 1px;
+}
+
+#skills .col h6 span {
+    float: inline-end;
+    font-size: 14px;
+}
+
+#skills .progress {
+    height: 8px;
 }
 
 #skills .progress-bar {
     background-color: teal;
-    border-radius: 6px;
     animation: progress 3s ease-in-out forwards;
 }
 
@@ -137,6 +188,12 @@ body {
     background-color: #bebebe;
 }
 
+.qualification .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .qualification h2 {
     letter-spacing: 2px;
 }
@@ -148,7 +205,7 @@ body {
 .timeline {
     /* border-left: 3px solid rgb(185, 116, 116); */
     border-left: 3px solid rgb(9, 75, 75);
-    margin: 30px 0 30px 40px;
+    margin: 30px 0 30px 25px;
     padding-left: 15px;
     transition: all ease-in-out 0.5s;
 }
@@ -194,13 +251,19 @@ body {
 
 /* services section------------------------------------------ */
 #services {
-    background: radial-gradient(circle, #16222A, #3A6073);
+    /* background: radial-gradient(circle, #07323d, #3A6073); */
     height: 100vh;
+    width: 100%;
+    background-image: url("../images/bg-1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #services h2 {
     letter-spacing: 2px;
-    color: rgb(88, 200, 202);
+    color: rgb(95, 214, 216);
     padding: 70px 0;
 }
 
@@ -209,9 +272,9 @@ body {
     transition: all ease-in-out 0.3s;
 }
 
-#services .card-body a {
-    background-color: rgb(88, 200, 202);
-    cursor: pointer;
+#services .card:hover {
+    box-shadow: 0px 0px 20px 4px white;
+    transform: scale(1.1);
 }
 
 #services i {
@@ -219,16 +282,37 @@ body {
     color: rgb(88, 200, 202);
 }
 
+#services .card-body a {
+    background-color: rgb(88, 200, 202);
+    color: black;
+    cursor: pointer;
+}
+
+#services .card-body a:hover {
+    background-color: #fff;
+    color: rgb(13, 71, 71);
+}
+
+#services .modal-header {
+    background-color: rgb(7, 111, 111);
+    color: #fff;
+}
+
+#services .modal-content {
+    color: rgb(6, 72, 72);
+}
+
 /* end of services----------------------------------------------- */
 /* portfolio -------------------------------------------*/
 #portfolio {
-    background-color: rgb(251, 255, 255);
+    background: radial-gradient(grey, white);
     padding: 75px 0;
     height: 100vh;
 }
 
 #portfolio h2 {
     letter-spacing: 2px;
+    color: rgb(6, 72, 72);
 }
 
 .portfolio-section {
@@ -249,7 +333,6 @@ body {
 
 .portfolio-section .row img {
     width: 300px;
-    /* height: 215px; */
     height: 250px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px #605f5f;
@@ -257,10 +340,9 @@ body {
 }
 
 .portfolio-section .work-details {
-    width: 305px;
-    height: 250px;
+    width: 0;
     height: 0;
-    background: linear-gradient(rgb(1, 18, 21), rgb(112, 176, 198));
+    background: linear-gradient(rgb(112, 176, 198), rgb(26, 62, 100), rgb(112, 176, 198));
     color: transparent;
     position: absolute;
     left: 0;
@@ -289,36 +371,39 @@ body {
 
 /* contact section----------------------------------------------- */
 #contact {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: row; */
     height: auto;
     padding: 80px 0;
 }
 
 .contact-section {
-
     position: relative;
     display: flex;
     width: 1200px;
     height: 600px;
 }
 
-.contact-info .card {
-    background-color: rgb(9, 75, 75);
-}
-
 .contact-info {
     padding-left: 10px;
     position: absolute;
     top: 40px;
-    /* left: 200px; */
     width: 350px;
     z-index: 1;
     background-color: rgb(9, 75, 75);
     box-shadow: -10px 20px 50px rgb(103, 101, 101);
     transition: all ease-in-out 0.5s;
+}
+
+.contact-info .card {
+    background-color: rgb(9, 75, 75);
+}
+
+.contact-info .card a {
+    text-decoration: none;
+    color: white
 }
 
 .contact-info h4 {
@@ -355,25 +440,41 @@ body {
 /* footer */
 .foot {
     padding: 30px 0;
+    background-color: black;
+}
+
+.foot-links a,
+.foot-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px 8px;
+}
+
+.foot-links a:hover,
+.foot-social a:hover {
+    color: rgb(44, 209, 209);
+}
+
+.back-to-top i {
+    color: slategrey;
+    font-size: 30px;
 }
 
 
-@media(width<768px) {
+/* -----------------------------------------------MEDIA QUERIES ---------------------------------------------- */
+@media(width<992px) {
 
     /* navbar -----------------------*/
-    .navbar-toggler i {
-        border: 0;
-    }
 
     .navbar-collapse {
         border-radius: 10px;
-        height: 90vh;
+        height: 95vh;
         width: 100%;
         margin-top: 10px;
     }
 
     .navbar-collapse li {
-        padding: 35px 0;
+        padding: 40px 0;
     }
 
     .navbar-collapse li a {
@@ -382,6 +483,11 @@ body {
 
     /* end of navbar--------------------------- */
     /* home section----------------------------- */
+    .hom-content {
+        padding: 40px 35px;
+        margin: 0 25px;
+    }
+
     .home-section h1 {
         font-size: 55px;
         letter-spacing: 1px;
@@ -393,63 +499,102 @@ body {
     }
 
     .hom-content p {
-        line-height: 2;
+        line-height: 1;
         font-size: 20px;
+        margin: 25px 0;
     }
 
     /* end of home section-------------------------------- */
 
+    /* about section--------------------------------------- */
+    #about .col {
+        margin: 150px 0;
+    }
+
+    .about-box h2 {
+        letter-spacing: 2px;
+        line-height: 3;
+    }
+
+    .about-box p {
+        line-height: 2em;
+        font-size: 20px;
+    }
+
+    .about-box a {
+        margin: 30px 0;
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    /* end of about section-------------------------------------- */
+    /* skills-------------------------------------------- */
+    .skills-section .container {
+        padding: 30px 0;
+    }
+
+    /* end of skills-------------------------------------- */
+    /* qualification------------------------------------- */
+    .qualification {
+        padding: 35px 0;
+    }
+
+    /* end of qualification------------------------------- */
+    /* services------------------------------------------------- */
+    #services .col {
+        margin: 55px 0;
+    }
+
+    #services h2 {
+        padding: 60px 0;
+    }
+
+    /* 
+    /* #services .card {
+        padding: 15px 0;
+    } */
+    */ #services .card h4 {
+        font-size: 30px;
+    }
+
+    #services i {
+        font-size: 80px;
+    }
+
+    #services p {
+        font-size: 20px;
+    }
+
+    #services a {
+        font-size: 25px;
+    }
+
+    /* end of services------------------------------------------- */
+    /* contact section----------------------------------------------- */
+
+    .contact-section {
+        width: 1200px;
+        height: 600px;
+    }
+
+    .contact-info {
+        padding-left: 10px;
+        left: 15px;
+        width: 300px;
+    }
+
+    .contact-form {
+        width: 70%;
+        padding-left: 80px;
+    }
+
+    /* end of contact----------------------------- */
 }
 
-/* about section--------------------------------------- */
-#about .col {
-    margin: 120px 0;
-}
-
-.about-box h2 {
-    letter-spacing: 2px;
-    line-height: 3;
-}
-
-.about-box p {
-    line-height: 2em;
-    font-size: 20px;
-}
-
-.about-box a {
-    margin: 30px 0;
-    font-size: 20px;
-}
-
-/* end of about section-------------------------------------- */
-
-/* contact section----------------------------------------------- */
-
-.contact-section {
-    width: 1200px;
-    height: 600px;
-}
-
-.contact-info {
-    padding-left: 10px;
-    left: 15px;
-    width: 300px;
-}
-
-.contact-form {
-    width: 70%;
-    padding-left: 80px;
-}
-
-/* end of contact----------------------------- */
 
 @media(width<576px) {
 
     /* navbar -----------------------*/
-    .navbar-toggler i {
-        border: 0;
-    }
-
     .navbar-collapse {
         border-radius: 10px;
         height: 90vh;
@@ -458,7 +603,7 @@ body {
     }
 
     .navbar-collapse li {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     .navbar-collapse li a {
@@ -467,6 +612,12 @@ body {
 
     /* end of navbar--------------------------- */
     /* home section----------------------------- */
+    .hom-content {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 35px 35px;
+        margin: 15px;
+    }
+
     .home-section h1 {
         font-size: 50px;
         letter-spacing: 1px;
@@ -491,7 +642,7 @@ body {
 
     .about-box h2 {
         letter-spacing: 2px;
-        margin: 30px 0;
+        margin: 35px 0;
     }
 
     .about-box p {
@@ -505,9 +656,19 @@ body {
     }
 
     /* end of about section-------------------------------------- */
+    /* skills ----------------------------------------------------*/
+    .skills-section .container {
+        flex-direction: column;
+    }
+
+    /* end of skills------------------------------------------------ */
     /* services section------------------------------------------ */
+    #services .col {
+        margin: 18px 0;
+    }
+
     #services h2 {
-        padding: 5px 0;
+        padding: 20px 0;
     }
 
     #services .card h4 {
@@ -515,7 +676,15 @@ body {
     }
 
     #services i {
-        font-size: 20px;
+        font-size: 50px;
+    }
+
+    #services p {
+        font-size: 18px;
+    }
+
+    #services a {
+        font-size: 18px;
     }
 
     /* end of services */
@@ -568,4 +737,18 @@ body {
     }
 
     /* end of contact section----------------------------------- */
+    .foot-links {
+        flex-direction: column;
+    }
+
+    .foot-links .col2 {
+        margin: 5px 0;
+    }
+
+    .foot-links a,
+    .foot-social a {
+        text-decoration: none;
+        color: #fff;
+        margin: 10px 3px;
+    }
 }

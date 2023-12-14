@@ -21,7 +21,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -30,10 +30,10 @@
         <!-- navbar-------------------------------- -->
         <nav class="navbar navbar-expand-lg p-0">
             <div class="container-fluid px-lg-0">
-                <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbaritems"
+                    aria-controls="navbaritems" aria-expanded="false">
                     <!-- <span class="navbar-toggler-icon"></span> -->
-                    <span><i class="fa-solid fa-bars text-white"></i></span>
+                    <span><i class="fa-solid fa-bars text-end"></i></span>
                 </button>
 
                 <div class="collapse navbar-collapse mt-sm-3 mt-md-0 py-md-3" id="navbaritems">
@@ -65,20 +65,26 @@
 
     <main>
         <!-- Home page --------------------------------------------------------------->
-        <section class="home-section d-flex flex-column justify-content-center align-items-center" id="home">
-            <div class="hom-content text-center p-4 ">
-                <h3 class="fw-medium">Hi,</h3>
-                <h1 class="fw-semibold"> i'm SNEHA S</h1>
-                <h3 class="fw-semibold">FULL STACK DEVELOPER</h3>
+        <section class="home-section container-fluid d-flex flex-column justify-content-center align-items-center"
+            id="home">
+            <div class="hom-content text-center border-2">
+                <h4 class="fw-semibold">Hi, i'm</h4>
+                <h1>SNEHA S</h1>
+                <h4 class="fw-semibold bg-secondary-subtle text-dark rounded-1">FULL STACK WEB DEVELOPER</h4>
                 <p>You can reach out to me if you need any help in
                     making a website
                     for you.</p>
-                <a href="#contact" role="button" class="btn border-0 text-dark fw-semibold p-3"
-                    style="background-color:rgb(44, 209, 209);">Contact
+                <a href="#contact" role="button" class="btn border-0 fw-semibold">Contact
                     Me <span><i class="fa-solid fa-angles-right"></i></span></a><br>
-                <a href=""><i class="fa-brands fa-github m-3 fs-3 text-white"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin m-3 fs-3 text-white"></i></a>
-                <a href=""><i class="fa-brands fa-skype  m-3 fs-3 text-white"></i></a>
+                <div class="social">
+                    <a href="https://github.com/SnehaSudhakar/"><i class="fa-brands fa-github m-3 fs-2 "></i></a>
+                    <a href="https://www.linkedin.com/in/snehasudhakaran/"><i
+                            class="fa-brands fa-linkedin m-3 fs-2 "></i></a>
+                    <a href="mailto:snehasudhakaran96@gmail.com"><i class="fa-regular fa-envelope  m-3 fs-2 "></i></a>
+                    <a href="https://join.skype.com/invite/yPxL0pvBQOGF"><i
+                            class="fa-brands fa-skype  m-3 fs-2 "></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-telegram m-3 fs-2"></i></a> -->
+                </div>
             </div>
         </section>
         <!-- End of Home page --------------------------------------------------------->
@@ -89,16 +95,15 @@
                 <div class="col col-md-6 col-sm-12 text-center">
                     <div class="about-box  border my-md-5 my-sm-0  p-5 ">
                         <h2 class="fs-1 fw-semibold">ABOUT ME</h2>
-                        <p>Full Stack Developer with 11 month of experience in developing academic
+                        <p>Full Stack web Developer with 11 month of experience in developing academic
                             projects in .Net, 6 month of
-                            experience preparing web applications. Post graduated in
+                            experience in developing full stack web applications. Post graduated in
                             Computer Science. Looking forward to apply my knowledge and expertize into a role as
                             Full
                             Stack
                             Developer.</p>
-                        <a href="./docs/SNEHA RES cmpny.pdf" role="button"
-                            class="btn border-0 text-white p-3 fw-semibold" download="Sneha S Resume"
-                            style="background-color:teal;">Download Resume
+                        <a href="./docs/Sneha S.pdf" role="button" class="btn border-0 text-white p-3 fw-semibold"
+                            download="Sneha S" style="background-color:teal;">Download Resume
                             <span><i class="fa-solid fa-download"></i></span></a>
                     </div>
                 </div>
@@ -112,154 +117,152 @@
         <!-- Technical skills ------------------------------->
         <section id="skills" class="skills-section pb-5">
             <h2 class="fs-1 fw-semibold text-center">TECHNICAL SKILLS</h2>
-
-            <div class="row row-cols-sm-1 row-cols-lg-2 mx-auto w-75 g-5">
-                <div class="col col-sm-12 col-md-6 text-white  p-5">
-                    <h4 class="mb-4 fw-medium text-center"><span><i class="fa-solid fa-code"></i></span>
-                        FRONT END
-                    </h4>
-                    <h6><span><img src="./images/html-logo.jpg" alt="" style="max-width: 25px;"></span> HTML</h6>
+            <div class="container text-white gap-5">
+                <div class="col">
+                    <h5 class="mb-4 fw-medium text-center"><span><i class="fa-solid fa-code"></i></span> FRONT END
+                    </h5>
+                    <h6>HTML<span>75%</span></h6>
+                    <div class="progress my-3">
+                        <div class="progress-bar" style="width:75%;">
+                            <!-- <div class="progress-value">75%</div> -->
+                        </div>
+                    </div>
+                    <h6>CSS<span>70%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:70%;">
-                            <div class="progress-value">70%</div>
+                            <!-- <div class="progress-value">70%</div> -->
                         </div>
                     </div>
-                    <h6><span><img src="./images/css3-logo.jpg" alt="" style="max-width: 35px;"></span> CSS
-                    </h6>
+                    <h6>BOOTSTRAP<span>75%</span></h6>
                     <div class="progress my-3">
-                        <div class="progress-bar" style="width:65%;">
-                            <div class="progress-value">65%</div>
+                        <div class="progress-bar" style="width:75%;">
+                            <!-- <div class="progress-value">75%</div> -->
                         </div>
                     </div>
-                    <h6><span><img src="./images/bootstrap-logo.jpg" alt="" style="max-width: 25px;"></span> BOOTSTRAP
-                    </h6>
-                    <div class="progress my-3">
-                        <div class="progress-bar" style="width:60%;">
-                            <div class="progress-value">60%</div>
-                        </div>
-                    </div>
-                    <h6><span><img src="./images/javascript-logo.png" alt="" style="max-width: 20px;"></span> JAVASCRIPT
-                    </h6>
+                    <h6>JAVASCRIPT<span>60%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:30%;">
-                            <div class="progress-value">30%</div>
+                            <!-- <div class="progress-value">30%</div> -->
                         </div>
                     </div>
-
                 </div>
-                <div class="col col-sm-12 col-md-6 text-white   p-5">
-                    <h4 class="mb-4 text-center fw-medium"><span><i class="fa-solid fa-gears"></i></span> BACK
-                        END</h4>
-                    <h6><span><img src="./images/c-sharp.png" alt="" style="max-width: 25px;"></span> C#.NET</h6>
+
+                <div class="col ">
+                    <h5 class="mb-4 text-center fw-medium"><span><i class="fa-solid fa-gears"></i></span> BACK
+                        END</h5>
+                    <h6>C#.NET<span>10%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:10%;">
-                            <div class="progress-value">10%</div>
+                            <!-- <div class="progress-value">10%</div> -->
                         </div>
                     </div>
-                    <h6><span><img src="./images/NET_Core.png" alt="" style="max-width: 25px;"></span> ASP .NET CORE
-                    </h6>
+                    <h6>ASP .NET CORE<span>5%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:5%;">
-                            <div class="progress-value">5%</div>
+                            <!-- <div class="progress-value">10%</div> -->
                         </div>
                     </div>
-                    <h6><span><img src="./images/mongodb-logo.png" alt="" style="max-width: 25px;"></span> MONGO DB</h6>
+                    <h6>MONGO DB<span>40%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:40%;">
-                            <div class="progress-value">40%</div>
+                            <!-- <div class="progress-value">40%</div> -->
                         </div>
                     </div>
-                    <h6><span><img src="./images/mysql.png" alt="" style="max-width: 25px;"></span> MY SQL</h6>
+                    <h6>MY SQL<span>20%</span></h6>
                     <div class="progress my-3">
                         <div class="progress-bar" style="width:20%;">
-                            <div class="progress-value">20%</div>
+                            <!-- <div class="progress-value">20%</div> -->
                         </div>
                     </div>
                 </div>
-            </div>
+
         </section>
         <!-- Qualification ---------------------------------->
         <section class="qualification">
             <h2 class="fs-1 fw-semibold text-dark text-center p-3">QUALIFICATION</h2>
+            <div class="container">
 
-            <div class="row row-cols-sm-1 row-cols-md-2 w-md-100 w-lg-75 mx-md-auto mx-lg-auto ">
-                <div class="col col-sm-12 col-md-6 ">
-                    <h3 class="fw-semibold text-center w-100"><span><i class="fa-solid fa-graduation-cap"></i></span>
-                        EDUCATION</h3>
-                    <div class="timeline mt-3">
+                <div class="row row-cols-sm-1 row-cols-md-2">
+                    <div class="col col-sm-12 col-md-6 ">
+                        <h3 class="fw-semibold text-center w-100"><span><i
+                                    class="fa-solid fa-graduation-cap"></i></span>
+                            EDUCATION</h3>
+                        <div class="timeline mt-3">
 
-                        <ul>
-                            <li>
-                                <div class="card">
-                                    <div class="card-body ">
-                                        <div class="card-title">
-                                            <p><span><i class="fa-solid fa-calendar-days"></i></span>
-                                                2013-2016
-                                            </p>
-                                            <h5 class="fw-semibold">BSc</h5>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>IHRD Vazhakkad</p>
+                            <ul>
+                                <li>
+                                    <div class="card">
+                                        <div class="card-body ">
+                                            <div class="card-title">
+                                                <p><span><i class="fa-solid fa-calendar-days"></i></span>
+                                                    2013-2016
+                                                </p>
+                                                <h5 class="fw-semibold">BSc</h5>
+                                            </div>
+                                            <div class="card-text">
+                                                <p>IHRD Vazhakkad</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="card my-3">
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            <p><span><i class="fa-solid fa-calendar-days"></i></span>
-                                                2016-2018
-                                            </p>
-                                            <h5 class="fw-semibold">MSc</h5>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>CCSIT, Calicut University Campus</p>
+                                </li>
+                                <li>
+                                    <div class="card my-3">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <p><span><i class="fa-solid fa-calendar-days"></i></span>
+                                                    2016-2018
+                                                </p>
+                                                <h5 class="fw-semibold">MSc</h5>
+                                            </div>
+                                            <div class="card-text">
+                                                <p>CCSIT, Calicut University Campus</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col col-sm-12 col-md-6">
-                    <h3 class="fw-semibold text-center w-100"><span><i class="fa-solid fa-briefcase"></i></span> WORK
-                    </h3>
-                    <div class="timeline">
-                        <ul>
-                            <li>
-                                <div class="card my-3">
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            <p><span><i class="fa-solid fa-calendar-days"></i></span>
-                                                2018-2019
-                                            </p>
-                                            <h5 class="fw-semibold">Project Associate</h5>
-                                        </div>
-                                        <div class="card-text ">
-                                            <p>Bluegen Solutions, Calicut</p>
+                    <div class="col col-sm-12 col-md-6">
+                        <h3 class="fw-semibold text-center w-100"><span><i class="fa-solid fa-briefcase"></i></span>
+                            WORK
+                        </h3>
+                        <div class="timeline">
+                            <ul>
+                                <li>
+                                    <div class="card my-3">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <p><span><i class="fa-solid fa-calendar-days"></i></span>
+                                                    2018-2019
+                                                </p>
+                                                <h5 class="fw-semibold">Project Associate</h5>
+                                            </div>
+                                            <div class="card-text ">
+                                                <p>Bluegen Solutions, Calicut</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
+                                </li>
 
-                            <li>
-                                <div class="card my-3 ">
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            <p><span><i class="fa-solid fa-calendar-days"></i></span>
-                                                2023-2024
-                                            </p>
-                                            <h5 class="fw-semibold">Full Stack Intern</h5>
-                                        </div>
-                                        <div class="card-text">
-                                            <p>Quest Innnovative Solutions,Calicut</p>
+                                <li>
+                                    <div class="card my-3 ">
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <p><span><i class="fa-solid fa-calendar-days"></i></span>
+                                                    2023-2024
+                                                </p>
+                                                <h5 class="fw-semibold">Full Stack Intern</h5>
+                                            </div>
+                                            <div class="card-text">
+                                                <p>Quest Innnovative Solutions,Calicut</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -268,11 +271,11 @@
 
         <!-- Services --------------------------------------------------------------------->
         <section id="services">
-            <h2 class="fs-1 fw-bolder text-center">
+            <h2 class="fs-1 fw-semibold text-center">
                 SERVICES</h2>
-            <div class="row row-cols-sm-1 row-cols-lg-2 w-75 mx-auto pb-md-5 g-sm-3 g-md-5">
+            <div class="row row-cols-sm-1 row-cols-lg-2 w-75 mx-auto pb-md-5 g-md-5">
                 <!-- Designing ---------------------------------->
-                <div class="col col-sm-12 col-lg-6 text-center">
+                <div class="col col-sm-12 col-lg-6 text-center ">
                     <div class="card border border-0 rounded-0 bg-body-secondary bg-opacity-10 ">
                         <div class="card-body">
                             <i class="fa-solid fa-palette"></i>
@@ -280,22 +283,23 @@
                             <p class="card-text text-white mt-3">
                                 Design is thinking made visual.
                             </p>
-                            <a href="#" role="button" class="btn border-0 text-dark fw-semibold p-3 my-3"
+                            <a href="#" role="button" class="btn border-0 fw-semibold p-3 my-md-3"
                                 data-bs-toggle="modal" data-bs-target="#design-view">View more</a>
                         </div>
                     </div>
+
                 </div>
 
                 <!-- view designing details ------------------------>
                 <div class="modal fade" id="design-view">
                     <div class="modal-dialog modal-dialog-scrollable">
                         <div class="modal-content ">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-dark">Front End<br>Development </h4>
+                            <div class="modal-header border-0">
+                                <h4 class="modal-title ">Front End Development </h4>
                                 <button class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
-                            <div class="modal-body">
-                                <p class="text-muted">UI designing using HTML, CSS, JS, Angular etc</p>
+                            <div class="modal-body bg-secondary-subtle">
+                                <p>UI designing using HTML, CSS, JS, Angular etc</p>
                             </div>
                         </div>
                     </div>
@@ -310,7 +314,7 @@
                             <p class="card-text text-white mt-3">
                                 Develops your thoughts to experiences.
                             </p>
-                            <a href="#" role="button" class="btn border-0 text-dark fw-semibold p-3 my-3"
+                            <a href="#" role="button" class="btn border-0  fw-semibold p-3 my-md-3"
                                 data-bs-toggle="modal" data-bs-target="#develop-view">View more</a>
                         </div>
                     </div>
@@ -319,26 +323,24 @@
                 <!-- view development details --------------------->
                 <div class="modal fade" id="develop-view">
                     <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title text-dark">Back End<br> Development </h4>
-                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                        <div class="modal-content ">
+                            <div class="modal-header border-0">
+                                <h4 class="modal-title ">Back End Development </h4>
+                                <button class="btn-close " data-bs-dismiss="modal"></button>
                             </div>
-                            <div class="modal-body">
-                                <p class="text-muted">Web Development using .NET, MongoDB, MySQL etc</p>
+                            <div class="modal-body bg-secondary-subtle">
+                                <p>Web Development using .NET, MongoDB, MySQL etc</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
         <!-- End of Services -------------------------------------------------------------->
 
         <!-- Portfolio/ works ------------------------------------------------------------->
         <section id="portfolio">
-            <h2 class="fs-1 fw-bolder tex-dark text-center">
-                PORTFOLIO</h2>
+            <h2 class="fs-1 fw-semibold text-center">PORTFOLIO</h2>
             <p class="tex-dark text-center " style="letter-spacing: 2px;">MY LATEST WORKS</p>
             <div class="portfolio-section">
                 <div class="row g-3">
@@ -384,7 +386,7 @@
                 <div class="contact-info p-3">
                     <div class="card text-white border-0">
                         <div class="card-title p-3">
-                            <h4 class="fw-semibold">CONTACT INFO</h4>
+                            <h4 class="fs-2 fw-medium">CONTACT INFO</h4>
                         </div>
                         <div class="card-body">
                             <p style="line-height: 2em;"><span><i class="fa-solid fa-location-dot"
@@ -392,35 +394,35 @@
                                 House<br>Behind Sevamandir
                                 HSS<br>Ramanattukara P O<br>Kozhikode - 673633</p>
                             <p><span><i class="fa-solid fa-phone" style="font-size:25px;"></i></span> 9446354018</p>
-                        </div>
-                        <div class="card-footer mx-auto">
-                            <a href=""><i class="fa-solid fa-envelope m-3 fs-3 text-white"></i></a>
-                            <a href=""><i class="fa-brands fa-github m-3 fs-3 text-white"></i></a>
-                            <a href=""><i class="fa-regular fa-envelope m-3 fs-3 text-white"></i></a>
+                            <p><span><i class="fa-regular fa-envelope" style="font-size:25px;"></i></span>
+                                snehasudhakaran96@gmail.com</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-form ">
-                    <h2 class="text-center fs-1 fw-bolder p-3">GET
+                    <h2 class="text-center fs-1 fw-semibold p-3">GET
                         IN TOUCH</h2>
 
                     <form action="">
                         <div class="my-2 form-floating">
-                            <input type="text" name="name" class="form-control " placeholder="Name" required>
-                            <label for="" class="form-label">Name</label>
+                            <input type="text" name="name" id="name" class="form-control " placeholder="Name" required>
+                            <label for="name" class="form-label">Name</label>
                         </div>
                         <div class="my-2 form-floating">
-                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
-                            <label for="" class="form-label">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"
+                                required>
+                            <label for="email" class="form-label">E-mail</label>
                         </div>
                         <div class="my-2 form-floating">
-                            <input type="text" name="phone" class="form-control" placeholder="Mobile Number" required>
-                            <label for="" class="form-label">Mobile</label>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Mobile Number"
+                                required>
+                            <label for="phone" class="form-label">Mobile</label>
                         </div>
                         <div class="my-2 form-floating">
-                            <input type="text" name="subject" class="form-control " placeholder="Subject" required>
-                            <label for="" class="form-label">Subject</label>
+                            <input type="text" name="subject" id="sub" class="form-control " placeholder="Subject"
+                                required>
+                            <label for="sub" class="form-label">Subject</label>
                         </div>
                         <div class="my-2 ">
                             <textarea name="" id="" class="form-control" rows="4" cols="10"
@@ -442,25 +444,34 @@
         </section>
         <!-- End of contact -------------------------------------------------------------->
 
-
-        <a href="#home" class="top-arrow position-fixed end-0 bottom-0"><i class="fa-solid fa-square-caret-up"
-                style="color:slategrey;font-size: 40px;"></i></a>
+        <a href="#home" class="back-to-top position-fixed end-0 bottom-0"><i
+                class="fa-solid fa-circle-arrow-up"></i></a>
     </main>
 
     <footer>
         <!-- Footer  ----------------------------------------------------->
-        <div class="foot d-flex flex-column justify-content-center align-items-center text-white"
-            style="background-color: black;">
-            <div class="foot-name" style="letter-spacing: 3px;">
-                <h1 class="text-center fw-bold">SNEHA S</h1>
-                <p class="text-center ">.NET FULL STACK DEVELOPER</p>
+        <div class="foot d-flex flex-column justify-content-center align-items-center text-white">
+            <div class="foot-social" style="letter-spacing: 3px;">
+                <a href="https://github.com/SnehaSudhakar/"><i class="fa-brands fa-github m-3 fs-2 "></i></a>
+                <a href="https://www.linkedin.com/in/snehasudhakaran/"><i
+                        class="fa-brands fa-linkedin m-3 fs-2 "></i></a>
+                <a href="mailto:snehasudhakaran96@gmail.com"><i class="fa-regular fa-envelope  m-3 fs-2 "></i></a>
+                <a href="https://join.skype.com/invite/yPxL0pvBQOGF"><i class="fa-brands fa-skype  m-3 fs-2 "></i></a>
             </div>
-            <div class="foot-social">
-                <a href=""><i class="fa-brands fa-whatsapp m-3 fs-3 text-white"></i></a>
-                <a href=""><i class="fa-brands fa-telegram m-3 fs-3 text-white"></i></a>
-                <a href=""><i class="fa-brands fa-skype  m-3 fs-3 text-white"></i></a>
+            <div class="foot-links d-flex justify-content-center align-items-center">
+                <div class="col2">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#skills">SKILLS</a>
+                </div>
+                <div class="col2">
+                    <a href="#services">SERVICES</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+
             </div>
-            <div class="foot-copy">
+            <div class="foot-copy my-3">
                 Designed by Sneha S. All <span><i class="fa-regular fa-copyright"></i></span> rights Reserved
             </div>
         </div>
