@@ -21,7 +21,7 @@ body {
 
 .navbar-toggler i {
     font-size: 40px;
-    color: rgb(44, 209, 209);
+    color: rgb(251, 255, 255);
 }
 
 .navbar-collapse {
@@ -633,8 +633,12 @@ body {
 
     /* end of home section-------------------------------- */
     /* about section--------------------------------------- */
+    #about .row {
+        flex-wrap: wrap;
+    }
+
     #about .col {
-        margin: 20px 16px;
+        margin: 110px 16px;
     }
 
     .about-box h2 {
