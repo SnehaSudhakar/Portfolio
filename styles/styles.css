@@ -102,8 +102,8 @@ body {
 /* end of home section-------------------------------- */
 
 /* about section--------------------------------------- */
-#about .col {
-    margin: 150px 0;
+#about .container {
+    padding: 150px 0;
 }
 
 .about-box {
@@ -633,12 +633,9 @@ body {
 
     /* end of home section-------------------------------- */
     /* about section--------------------------------------- */
-    #about .row {
-        flex-wrap: wrap;
-    }
 
-    #about .col {
-        margin: 110px 16px;
+    #about .container {
+        padding: 110px 16px;
     }
 
     .about-box h2 {
