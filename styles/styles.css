@@ -507,9 +507,6 @@ body {
     /* end of home section-------------------------------- */
 
     /* about section--------------------------------------- */
-    #about .col {
-        margin: 150px 0;
-    }
 
     .about-box h2 {
         letter-spacing: 2px;
@@ -637,7 +634,7 @@ body {
     /* end of home section-------------------------------- */
     /* about section--------------------------------------- */
     #about .col {
-        margin: 0;
+        margin: 20px 16px;
     }
 
     .about-box h2 {
