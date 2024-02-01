@@ -58,7 +58,8 @@ body {
 .hom-content {
     padding: 80px 120px;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 10px rgb(44, 209, 209);
+    border: 1px solid rgb(44, 209, 209);
+    box-shadow: 0px 0px 20px 1px rgb(44, 209, 209);
 }
 
 .home-section h1 {
@@ -389,7 +390,7 @@ body {
 .contact-info {
     padding-left: 10px;
     position: absolute;
-    top: 40px;
+    top: 80px;
     width: 350px;
     z-index: 1;
     background-color: rgb(9, 75, 75);
@@ -399,6 +400,10 @@ body {
 
 .contact-info .card {
     background-color: rgb(9, 75, 75);
+}
+
+.contact-info .card td {
+    padding: 10px;
 }
 
 .contact-info .card a {
@@ -580,9 +585,14 @@ body {
         width: 300px;
     }
 
+    .contact-info .card td {
+        padding: 10px 0px;
+    }
+
     .contact-form {
         width: 70%;
         padding-left: 80px;
+
     }
 
     /* end of contact----------------------------- */
@@ -721,7 +731,7 @@ body {
     }
 
     .contact-form {
-        top: 350px;
+        top: 280px;
         left: 15px;
         width: 350px;
         height: 60%;
